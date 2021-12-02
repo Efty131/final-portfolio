@@ -317,7 +317,7 @@ li {
 }
 
 .icons span:hover {
-  color: #dd9a05;
+  color: aqua;
 }
 
 @media only screen and (max-width: 567px) {
