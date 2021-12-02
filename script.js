@@ -18,3 +18,13 @@ navClose.addEventListener("click", () => {
     navBar.classList.remove("show");
   }
 });
+
+//         Typed.js
+
+const typed = new Typed('#type1', {
+
+  strings: ['web developer', 'programmer','coder'],
+    typeSpeed: 80,
+    backSpeed: 80,
+    loop: true,
+});
