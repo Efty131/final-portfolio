@@ -31,6 +31,7 @@ body {
   --white: #000;
 }
 
+
 h1,
 h2,
 h3,
@@ -366,4 +367,11 @@ li {
   .icons {
     display: none;
   }
+}
+#preloader{
+  background: #000 url(Images/loader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000000;
 }

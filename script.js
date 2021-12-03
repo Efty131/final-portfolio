@@ -28,3 +28,11 @@ const typed = new Typed('#type1', {
     backSpeed: 80,
     loop: true,
 });
+
+//           PreLoader
+
+let loader = document.getElementById('preloader');
+  
+   window.addEventListener("load", function(){
+       loader.style.display = "none";
+   })
