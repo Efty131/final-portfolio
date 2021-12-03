@@ -20,6 +20,7 @@ body {
   color: var(--black);
   position: relative;
   z-index: 1;
+  transition: 1s;
 }
 :root {
   --black: #000;
@@ -29,6 +30,29 @@ body {
 .dark {
   --black: #fff;
   --white: #000;
+}
+
+/*   Night Mode   */
+
+.btns ion-icon {
+  font-size: 2em;
+  color: red;
+
+}
+.btns ion-icon:hover{
+  color: aqua;
+}
+
+.btns ion-icon:nth-child(2) {
+  display: none;
+}
+
+.btns.active ion-icon:nth-child(2) {
+  display: block;
+}
+
+.btns.active ion-icon:nth-child(1) {
+  display: none;
 }
 
 
@@ -109,15 +133,7 @@ li {
   padding: 1.6rem 0;
 }
 
-.nav.fix-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #dd9a05;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  z-index: 999;
-}
+
 
 .navigation {
   display: flex;
@@ -171,7 +187,7 @@ li {
     width: 80%;
     max-width: 40rem;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--black);
     transition: all 500ms ease-in-out;
     z-index: 100;
   }
@@ -211,7 +227,7 @@ li {
   .nav-link:visited {
     display: block;
     font-size: 1.7rem;
-    color: var(--black);
+    color: var(--white);
     padding: 1rem 0;
   }
   .nav-link:hover {

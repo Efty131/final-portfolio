@@ -36,3 +36,13 @@ let loader = document.getElementById('preloader');
    window.addEventListener("load", function(){
        loader.style.display = "none";
    })
+
+//            Night Mode
+
+let dayNight = document.querySelector(".dayNight");
+const body = document.querySelector("body");
+
+      dayNight.onclick = function(){
+        body.classList.toggle('dark');
+        dayNight.classList.toggle('active');
+  }
