@@ -260,6 +260,15 @@ li {
     background-color: rgba(0, 0, 0, 0.8);
   }
 }
+.nav.fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
 
 /* Hero */
 .hero {
@@ -578,6 +587,7 @@ li {
   background: linear-gradient(45deg, #22ffde, #2196f3);
 }
 .skill-container{
+  flex-basis: 50%;
   display: flex;
    flex-direction: column;
   justify-content: center;
@@ -596,5 +606,121 @@ li {
   .skill{
     width: 80%;
   }
+  .flexbox{
+    flex-direction: column;
+  }
+  .flexbox .text p{
+    margin-left: 3px !important;
+  }
+}
+.flexbox{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.flexbox .text{
+  flex-basis: 50%;
+  padding: 15px 1rem;
+}
+.flexbox .text h2{
+  color: aqua;
+  text-align: center;
+}
+.flexbox .text p{
+  color: var(--white);
+  text-align: center;
+  margin-left: 25px;
+
+}
+.flexbox .text a{
+  margin-left: 15px;
+}
+
+/*   Section five start "Contact" */
+
+.contact{
+  background-color: var(--black);
+  color: var(--white);
+}
+.contact-center{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.contact-center .left h2{
+  font-size: 2rem;
+  color: aqua;
+}
+.contact-center .left p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.left div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.left div .content{
+  text-align: left;
+}
+.left .icon{
+  margin-right: 2rem;
+  font-size: 2.3rem;
+  color: rgb(0, 255, 13);
+}
+
+.content h3{
+  color: rgb(5, 238, 255);
+  font-family: al;
+}
+form h2{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+form input, form textarea{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  border: 1px solid aqua;
+  text-indent: 1rem;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  outline: none;
+  width: 100%;
+}
+form textarea{
+  max-width: 55.5rem;
+  margin-bottom: 3rem;
+  height: 16rem;
+}
+@media only screen and (max-width: 768px){
+  .contact-center{
+    grid-template-columns: 1fr;
+  }
+  .contact-center .left{
+    text-align: left;
+  }
+  .left div .content h3{
+      font-size: 1.6rem;
+  }
+  .left div .content span{
+    font-size: 1.5rem;
+}
+}
+
+
+/*  Footer  */
+
+footer {
+  background-color: rgb(48, 48, 48);
+  padding: 1.6rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer p span {
+  color: aqua;
 }
 
