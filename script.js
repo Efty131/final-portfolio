@@ -109,3 +109,9 @@ if (glide)
       },
     },
   }).mount();
+  //more projects button
+  let projects = document.querySelector('.more-projects');
+  let button = document.querySelector ('#project-btn');
+  button.addEventListener("click", function(){
+       projects.classList.toggle("more-projects-toggle");
+  })

@@ -604,6 +604,8 @@ li {
 @media only screen and (max-width: 768px){
   .skill{
     width: 80%;
+    display: flex;
+    justify-content: space-around;
   }
   .flexbox{
     flex-direction: column;
@@ -793,7 +795,12 @@ form textarea{
   color: #FFF;
   text-decoration: underline;
 }
-
+.more-projects{
+  display: none !important;
+}
+.more-projects-toggle{
+  display: block !important;
+}
 
 @media only screen and (max-width: 768px){
   .work .work_content{

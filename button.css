@@ -68,3 +68,67 @@
     transition: 1s;
     transition-delay: 0.75s;
 }
+/*  Projects button */
+#project-btn{
+    position: relative;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    margin: 40px;
+    transition: 1s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    overflow: hidden;
+}
+#project-btn:hover{
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr),
+    0 0 60px var(--clr),
+    0 0 100px var(--clr);
+}
+#project-btn::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 400%;
+    background: var(--clr);
+    transition: 1s;
+    animation: animate 2s linear infinite;
+}
+#project-btn:hover::before{
+    width: 100%;
+}
+@keyframes animate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#project-btn::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: black;
+}
+#project-btn:hover::after{
+    background: var(--clr);
+}
+#project-btn span{
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: bold;
+}
+#project-btn:hover span{
+    opacity: 1;
+}
