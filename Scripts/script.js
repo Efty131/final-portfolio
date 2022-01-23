@@ -112,6 +112,12 @@ if (glide)
   //more projects button
   let projects = document.querySelector('.more-projects');
   let button = document.querySelector ('#project-btn');
+  let span = document.querySelector("#buttonSpan");
   button.addEventListener("click", function(){
        projects.classList.toggle("more-projects-toggle");
+       if(span.textContent === "Show More"){
+         span.textContent = "Show Less"
+       }else{
+         span.textContent = 'Show More'
+       }
   })
