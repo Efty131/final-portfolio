@@ -121,3 +121,12 @@ if (glide)
          span.textContent = 'Show More'
        }
   })
+  //navbar more button
+  var more = document.querySelector('#more');
+  function myFunction(){
+    if(more.style.display === "none"){
+      more.style.display = 'block';
+    }else{
+      more.style.display = 'none';
+    }
+  }

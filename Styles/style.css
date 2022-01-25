@@ -19,6 +19,21 @@ body {
   background-color: var(--black);
   color: var(--black);
   position: relative;
+  /*   Disabling user selection       */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+#more{
+  margin-top: -20px;
+}
+#more a{
+  color: var(--white);
+}
+#more a:hover{
+  color: aqua;
+  padding-left: 80px;
+  transition: all 1s ease-in-out;
 }
 
 h1,
@@ -48,8 +63,8 @@ canvas {
   z-index: 1;
 }
 @font-face {
-  font-family: "al";
-  src: url(fonts/Algerian\ Regular.ttf);
+  font-family: "algerian";
+  src: url('../fonts/Algerian-Regular.ttf');
   font-style: italic;
 }
 :root {
@@ -115,6 +130,10 @@ canvas {
 @media only screen and (max-width: 996px) {
   .header {
     min-height: 60vh;
+    z-index: 1000000000000000000000;
+  }
+  canvas{
+    display: none;
   }
 
   .header img {
@@ -733,7 +752,7 @@ p {
 
 .content h3 {
   color: rgb(5, 238, 255);
-  font-family: al;
+  font-family: algerian;
 }
 .right{
   z-index: 8000;
